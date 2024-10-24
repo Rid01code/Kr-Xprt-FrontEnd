@@ -1,0 +1,293 @@
+/* css for NavBar */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    list-style: none;
+    background-color: rgb(0, 146, 251);
+    height: 40px;
+    border-radius: 10px;
+}
+.calenderNavList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+.toolTip{
+    position: absolute;
+    z-index: 10;
+    top: 8.5rem;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow:  10px 10px 30px #bebebe,
+            -10px -10px 30px #ffffff;
+}
+.toolTipText{
+    font-size: small;
+    font-family: "Montserrat" ,  sans-serif;
+}
+.navList{
+    display: flex;
+    gap: 12vmin;
+    list-style: none;
+}
+.srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* Prevents the text from wrapping */
+    border: 0;
+    }
+    .dateInput{
+        width: 150px;
+
+    }
+.listWord {
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.listWord::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -4px; 
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.listWord:hover::after {
+    visibility: visible;
+    width: 100%; 
+}
+
+.listWordLink{
+    text-decoration: none;
+}
+
+.activeListWordLink{
+    border-bottom: 3px solid white;
+    text-decoration: none;
+}
+
+/* Css for Home */
+
+.homeBox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* css for Appointment */
+.appointmentBox{
+    border-radius: 20px;
+    background: #e5e5e5;
+    box-shadow:  10px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    width: 45%;
+    padding-top: 5px;
+    margin-top: 35px;
+}
+
+.appointmentForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+}
+
+.appointmentBoxHeading{
+    text-align: center;
+    font-family: "Montserrat" , sans-serif;
+}
+
+.appointmentInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.appointmentGenderInput{
+    display: flex;
+}
+
+.inputsBox{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.labels{
+    font-weight: 400;
+    font-family: "Poppins" ,  sans-serif;
+}
+
+.inputsBox:focus{
+    border: 2px solid blue;
+}
+.appointmentButtonDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.appointmentButton{
+    width: 75px;
+    height: 35px;
+    color: white;
+    background-color: rgb(45, 136, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.appointmentButton:hover{
+    background-color: blue;
+}
+
+/* css for Patient */
+
+.patientBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin-top: 29px;
+    height: 70vh;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.patientBox::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.patientBoxHeading{
+    text-align: center;
+    font-family: "Montserrat" ,  sans-serif;
+}
+
+.patientUL{
+    list-style: none;
+    width: 80%;
+}
+
+.patientListBox{
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 15px #bebebe,
+    -20px -20px 60px #ffffff;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+}
+
+.patientName{
+    font-size: large;
+    font-weight: bold;
+}
+
+.patientBoxButtonBox{
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.patientEditButton{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: medium;
+    color: white;
+    background-color: rgb(130, 128, 128);
+}
+
+.patientDeleteButton{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: medium;
+    color: white;
+    background-color: red;
+}
+
+/* Doctors box */
+
+.doctorsBox{
+    border-radius: 20px;
+    background: #e5e5e5;
+    box-shadow:  10px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    width: 45%;
+    padding-top: 5px;
+    margin-top: 35px;
+    height: 340px;
+}
+
+.doctorsMainBox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doctorButtonBox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.getDoctorAppointmentButton{
+    height: 35px;
+    color: white;
+    background-color: rgb(73, 148, 253);
+    border: none;
+    border-radius: 10px;
+}
+
+.getDoctorAppointmentButton:hover{
+    background-color: blue;
+}
+
+/* PatientOnSpecificDate */
+
+.patientsOnSpecificDateDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patientsOnSpecificDateHeading{
+    font-family: "Poppins" , sans-serif;
+    text-align: center;
+}
+
+.patientsOnSpecificDatePatientDiv{
+    width: 70%;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src:  url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src:  url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap") format('woff2');
+}

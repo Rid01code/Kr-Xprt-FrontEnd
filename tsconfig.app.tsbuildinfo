@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/appointment.tsx","./src/components/doctors.tsx","./src/components/home.tsx","./src/components/navbar.tsx","./src/components/patients.tsx","./src/components/patientsonspecificdate.tsx","./src/components/store/appointedpatient.tsx"],"version":"5.6.2"}

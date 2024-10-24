@@ -1,0 +1,19 @@
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+}
+.subDiv{
+  width: 80%;
+}
+.Heading{
+  color: green;
+  font-family: 'Afacad-Flux', sans-serif
+}
+@font-face {
+  font-family: 'Afacad-Flux';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap') format('woff2');
+}

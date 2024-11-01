@@ -30,7 +30,8 @@ const Appointment = () => {
 
         const navigate = useNavigate()
 
-        const {id} = useParams()
+    const { id } = useParams()
+    console.log(uri)
         
         useEffect(() => {
             const fetch = async() => {
@@ -56,17 +57,17 @@ const Appointment = () => {
             fetch()
             },[id , setDoctors])
 
-        useEffect(()=>{
-            const fetch = async() => {
-            try {
-                const response = await axios.get(`${uri}/api/doctor/GetAllDoctors`)
-                setDoctors(response.data)
-            } catch (error) {
-                console.log(error)
-            }
-            };
-            fetch()
-        }, [])
+        // useEffect(()=>{
+        //     const fetch = async() => {
+        //     try {
+        //         const response = await axios.get(`${uri}/api/doctor/GetAllDoctors`)
+        //         setDoctors(response.data)
+        //     } catch (error) {
+        //         console.log(error)
+        //     }
+        //     };
+        //     fetch()
+        // }, [])
     
         const formatDate = (dateString: string) => {
             if (!dateString) {
